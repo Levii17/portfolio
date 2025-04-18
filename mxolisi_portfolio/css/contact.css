@@ -1,4 +1,3 @@
-/* Contact Section - Supporting Light and Dark Themes */
 .contact-section {
     padding: 6rem 0;
     background: linear-gradient(135deg, var(--background) 0%, var(--navbar-bg) 100%);
@@ -234,7 +233,7 @@
     color: var(--white);
   }
   
-  .btn {
+  /* .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -271,7 +270,7 @@
   
   .btn-text {
     margin: 0 auto;
-  }
+  } */
   
   .form-status {
     text-align: center;
