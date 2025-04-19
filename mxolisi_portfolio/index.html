@@ -9,14 +9,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/virus_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/virus_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/virus_io/favicon-16x16.png">
-  <title>Mxolisi - Web Developer</title>
-  <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/works.css">
-  <link rel="stylesheet" href="css/benefits.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/process.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <title>Mxolisi's Portfolio - Web Developer</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -26,123 +20,145 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar-container">
-            <div class="navbar-left">
-                <img src="https://github.com/Levii17/images/blob/main/logos/logo2_vectorized.png?raw=true" class="mxolisi" alt="Mxolisi Logo" width="150" height="40" loading="lazy">
-            </div>
+  <!-- NAVBAR -->
+  <header>
+
+    <nav class="navbar-container">
+      
+      <div class="navbar-left">
+        <img src="https://github.com/Levii17/images/blob/main/logos/logo2_vectorized.png?raw=true" class="mxolisi" alt="Mxolisi Logo" width="150" height="40" loading="lazy">
+      </div>
             
-            <div class="navbar-center" id="navbar-center">
-                <div class="logo">
-                    <a class="logo-icon" href="#hero">&#x2618;</a>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#works" class="nav-link">Works</a></li>
-                    <li><a href="#benefits" class="nav-link">Benefits</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#process" class="nav-link">Process</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-        
-                <a href="#contact" class="additional-link-btn">Book a call</a>
-                <span class="brand-name">Mxolisi</span>
-                
-                <!-- Theme Toggle in Navbar -->
-                <button id="navbar-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <svg id="navbar-moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="navbar-sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                
-                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
-            </div>
-                
-            <div class="navbar-right">
-                <div class="status-dot"></div>
-                <span>available for projects</span>
-            </div>
-                
-            <div class="mobile-status">
-                <div class="status-dot"></div>
-                <span>available for projects</span>
-            </div>
-        </nav>
-
-        <div class="mobile-dropdown" id="mobile-dropdown">
-            <ul class="mobile-nav-links">
-                <li><a href="#works">Works</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- Theme toggle for mobile menu -->
-            <div class="mobile-theme-container">
-                <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <svg id="mobile-moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="mobile-sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
+      <div class="navbar-center" id="navbar-center">
+          
+        <div class="logo">
+          <a class="logo-icon" href="#hero">&#x2618;</a>
         </div>
+
+        <ul class="nav-links">
+          <li><a href="#works" class="nav-link">Works</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
         
-        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-    </header>
+        <a href="#contact" class="additional-link-btn">Book a call</a>
+        <span class="brand-name">Mxolisi</span>
+                
+        <!-- Theme Toggle in Navbar -->
+        <button id="navbar-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+
+          <svg id="navbar-moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+
+          <svg id="navbar-sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+
+        </button>
+                
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+
+      </div>
+                
+      <div class="navbar-right">
+        <div class="status-dot"></div>
+        <span>available for projects</span>
+      </div>
+                
+      <div class="mobile-status">
+        <div class="status-dot"></div>
+        <span>available for projects</span>
+      </div>
+
+    </nav>
+
+    <div class="mobile-dropdown" id="mobile-dropdown">
+
+      <ul class="mobile-nav-links">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Theme toggle for mobile menu -->
+      <div class="mobile-theme-container">
+
+        <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+
+          <svg id="mobile-moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+
+          <svg id="mobile-sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+        
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  </header>
 
   <!-- HERO -->
   <section class="hero" id="hero">
-        <div class="particles-js" id="particles-js"></div>
+
+    <div class="particles-js" id="particles-js"></div>
 
 
-        <div class="hero-content">
-            <div class="hero-title-container">
-                <h1 class="bricolage-grotesque">Need a cool website?</h1>
-                
-                <!-- Theme Toggle near heading -->
-                <button id="hero-theme-toggle" class="hero-theme-toggle" aria-label="Toggle dark mode">
-                    <svg id="hero-moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="hero-sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                
-                <h2 class="bricolage-grotesque">I got you covered.</h2>
-            </div>
-            <p class="inter-font">Designing and building sites that wow visitors and win customers.</p>
+      <div class="hero-content">
+
+        <div class="hero-title-container">
+
+          <!-- Theme Toggle near heading -->
+          <button id="hero-theme-toggle" class="hero-theme-toggle" aria-label="Toggle dark mode">
+
+            <svg id="hero-moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+
+            <svg id="hero-sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+
+          </button>
+
+          <h1>Need a cool website? <br>I got you covered.</h1>
+          <p>Designing and building sites that wow visitors and win customers.</p>
+
+        </div>
 
             <div class="cta-buttons">
                 <a href="#contact" class="primary-btn">Book a call</a>
@@ -174,6 +190,7 @@
             <div class="project-info">
               <div class="project-year">2025</div>
               <h3 class="project-title">Under Construction</h3>
+              <hr>
               <p class="project-description">Coming Soon.</p>
               <div class="project-links">
                 <a href="#" class="project-link">
@@ -190,7 +207,7 @@
               </div>
             </div>
             <div class="project-image">
-              <img src="https://www.freepik.com/free-vector/flat-construction-template_1584459.htm#fromView=search&page=1&position=26&uuid=d6be5fc0-0b32-42a1-bc55-ec1be0b12102&query=website+under+construction" alt="Fruity product bottle on purple background">
+              <img src="https://img.freepik.com/free-vector/flat-construction-template_23-2147739035.jpg?t=st=1745046434~exp=1745050034~hmac=53a6c6fc80ce795abc68dea31323081141633d3d199c0f5b3cc3df57e5fee704&w=826" alt="project1">
             </div>
           </div>
         </li>
@@ -201,6 +218,7 @@
             <div class="project-info">
               <div class="project-year">2025</div>
               <h3 class="project-title">Under Construction</h3>
+              <hr>
               <p class="project-description">Coming Soon.</p>
               <div class="project-links">
                 <a href="#" class="project-link">
@@ -217,7 +235,7 @@
               </div>
             </div>
             <div class="project-image">
-              <img src="https://www.freepik.com/free-vector/construction-landing-page_4634837.htm#fromView=search&page=1&position=34&uuid=d6be5fc0-0b32-42a1-bc55-ec1be0b12102&query=website+under+construction" alt="Analytics dashboard interface">
+              <img src="https://img.freepik.com/free-vector/flat-construction-template_23-2147735660.jpg?uid=R186486732&ga=GA1.1.2054178271.1743776965&semt=ais_hybrid&w=740" alt="project2">
             </div>
           </div>
         </li>
@@ -228,6 +246,7 @@
             <div class="project-info">
               <div class="project-year">2025</div>
               <h3 class="project-title">Under Construction</h3>
+              <hr>
               <p class="project-description">Coming soon.</p>
               <div class="project-links">
                 <a href="#" class="project-link">
@@ -244,7 +263,7 @@
               </div>
             </div>
             <div class="project-image">
-              <img src="https://www.freepik.com/free-vector/construction-web-template-flat-style_1959751.htm#fromView=search&page=1&position=27&uuid=d6be5fc0-0b32-42a1-bc55-ec1be0b12102&query=website+under+construction" alt="EcoTracker mobile app interface">
+              <img src="https://img.freepik.com/free-vector/flat-construction-template_23-2147736344.jpg?t=st=1745046483~exp=1745050083~hmac=375df49f22d66277d83f68919b02a8a87cba9c4b4862ab8c0eeb8b1e85411d42&w=826" alt="project3">
             </div>
           </div>
         </li>
@@ -255,6 +274,7 @@
             <div class="project-info">
               <div class="project-year">2025</div>
               <h3 class="project-title">Under Construction</h3>
+              <hr>
               <p class="project-description">Coming Soon.</p>
               <div class="project-links">
                 <a href="#" class="project-link">
@@ -271,7 +291,7 @@
               </div>
             </div>
             <div class="project-image">
-              <img src="https://img.freepik.com/free-vector/flat-construction-template_23-2147736344.jpg?uid=R186486732&ga=GA1.1.2054178271.1743776965&semt=ais_hybrid&w=740" alt="Music creation interface">
+              <img src="https://img.freepik.com/free-vector/flat-construction-template_23-2147741156.jpg?t=st=1745046518~exp=1745050118~hmac=25c128f82cd41dfb7b736348977bb865c51aa936f4e3e38872fc215f35589084&w=826" alt="project4">
             </div>
           </div>
         </li>
@@ -282,6 +302,7 @@
             <div class="project-info">
               <div class="project-year">2025</div>
               <h3 class="project-title">Under Construction</h3>
+              <hr>
               <p class="project-description">Coming Soon.</p>
               <div class="project-links">
                 <a href="#" class="project-link">
@@ -298,7 +319,7 @@
               </div>
             </div>
             <div class="project-image">
-              <img src="https://img.freepik.com/free-vector/flat-construction-landing-page_23-2148192932.jpg?uid=R186486732&ga=GA1.1.2054178271.1743776965&semt=ais_hybrid&w=740" alt="Meal planning application interface">
+              <img src="https://img.freepik.com/free-vector/construction-concept-illustration_114360-2764.jpg?t=st=1745046545~exp=1745050145~hmac=b18f160d629dee0d356326866438ef0f4d52713331fa9a5456842e8d123bd7c3&w=826" alt="project5">
             </div>
           </div>
         </li>
@@ -528,14 +549,27 @@
                             <div class="tech-item" data-tech="JS">
                                 <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/javascript_1.svg" alt="JS">
                             </div>
+
+                            <div class="tech-item" data-tech="Git">
+                                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!PNG/git.png" alt="Git">
+                            </div>
+
+                            <div class="tech-item" data-tech="npm">
+                                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!PNG/npm.png" alt="npm">
+                            </div>
+
+                            <div class="tech-item" data-tech="React">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            </div>
                             
                             <div class="tech-item" data-tech="Figma">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
                             </div>
-  
-                            <div class="tech-item" data-tech="React">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+
+                            <div class="tech-item" data-tech="Python">
+                                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!PNG/python.png" alt="Python">
                             </div>
+  
                         </div>
                         
                         <div class="experience-bars">
@@ -757,15 +791,15 @@
                   <h4>Contact Information</h4>
                   <div class="info-item">
                     <i class="fas fa-envelope"></i>
-                    <p>hello@mxolisibhotile.com</p>
+                    <p><a href="mailto:mxolisibhotile58@gmail.com">hello@mxolisibhotile.com</a></p>
                   </div>
                   <div class="info-item">
                     <i class="fas fa-phone"></i>
-                    <p><a href="tel:+15551234567" class="phone-link">+27 67 188 4529</a></p>
+                    <p><a href="tel:+27671884529" class="phone-link">+27 67 188 4529</a></p>
                   </div>
                   <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>South Africa</p>
+                    <p><a href="https://maps.app.goo.gl/xxQ6iN1kLnjeBRsf9">South Africa</a></p>
                   </div>
                 </div>
                 
@@ -866,7 +900,6 @@
               <li><a href="#about">About</a></li>
               <li><a href="#process">Process</a></li>
               <li><a href="#works">Portfolio</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#blog">Blog</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -920,7 +953,6 @@
         <div class="footer-links-bottom">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
-          <a href="#">Cookies</a>
         </div>
       </div>
     </div>
@@ -950,13 +982,14 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="/js/theme.js"></script>
-  <script src="/js/works.js"></script>
-  <script src="/js/benefits.js"></script>
-  <script src="/js/about.js"></script>
-  <script src="/js/process.js"></script>
-  <script src="/js/contact.js"></script>
-  <script src="/js/footer.js"></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/works.js" defer></script>
+  <script src="/assets/js/benefits.js" defer></script>
+  <script src="/assets/js/about.js" defer></script>
+  <script src="/assets/js/process.js" defer></script>
+  <script src="/assets/js/contact.js" defer></script>
+  <script src="/assets/js/footer.js" defer></script>
+
 </body>
 </html>

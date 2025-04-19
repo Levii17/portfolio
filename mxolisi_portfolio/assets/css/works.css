@@ -1,0 +1,364 @@
+:root {
+  /* Light theme colors */
+  --black: #000010;
+  --white: #ffffff;
+  --background: #f8f9fa;
+  --text-color: #333333;
+  --heading-color: #333;
+  --subheading-color: #666;
+  --main-color: #3b82f6;
+  --secondary-color: #60a5fa;
+  --accent-color: #0984e3;
+  
+  --meta-color: #888;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --card-bg-1: #f0f8ff;
+  --card-bg-2: #fff5f5;
+  --card-bg-3: #f5fff5;
+  --card-bg-4: #f5f5ff;
+  --card-bg-5: #fffaf0;
+  --button-bg: #333333;
+  --button-text: #ffffff;
+
+  /* CARD STACKING */
+  --cards: 5;
+  --cardHeight: 85vh;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
+
+}
+  
+  /* Dark theme colors */
+  [data-theme="dark"] {
+    --black: #fff;
+    --white: #000;
+    --background: #0a0a1a;
+    --text-color: #e0e0ff;
+    --heading-color: #e0e0ff;
+    --subheading-color: #aaaacc;
+    --main-color: #8a5cf5;
+    --secondary-color: #3a6df0;
+    
+    --meta-color: #8888aa;
+    --card-shadow: 0 10px 30px rgba(0, 0, 30, 0.5);
+    --hover-shadow: 0 10px 20px rgba(106, 90, 205, 0.3);
+    --accent-color: #6554c0;
+    --card-bg-1: #111136;
+    --card-bg-2: #261a33;
+    --card-bg-3: #1a2933;
+    --card-bg-4: #17172d;
+    --card-bg-5: #1d1a24;
+    --button-bg: #8a5cf5;
+    --button-text: #ffffff;
+  }
+  
+  .works-section {
+    padding: 6rem 0;
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .work-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .work-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .works-section .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+    border-radius: 2px;
+  }
+  
+  .work-section .section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--subheading-color);
+    max-width: 700px;
+    margin: 0 auto 50px;
+  }
+  
+  /* Card Stacking Layout */
+  #projects {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+  
+  #project1 { --index: 1; }
+  #project2 { --index: 2; }
+  #project3 { --index: 3; }
+  #project4 { --index: 4; }
+  #project5 { --index: 5; }
+  
+  .project-card-wrapper {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    height: var(--cardHeight);
+    border-radius: 30px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  
+  #project1 .project-card { background-color: var(--card-bg-1); }
+  #project2 .project-card { background-color: var(--card-bg-2); }
+  #project3 .project-card { background-color: var(--card-bg-3); }
+  #project4 .project-card { background-color: var(--card-bg-4); }
+  #project5 .project-card { background-color: var(--card-bg-5); }
+  
+  .project-info {
+    flex: 1;
+    padding: 5% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-year {
+    font-size: 18px;
+    color: var(--meta-color);
+    margin-bottom: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .project-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
+  }
+  
+  .project-description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-top: 1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    transition: color 0.3s ease;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 28px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .project-link:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--hover-shadow);
+  }
+  
+  .project-link svg {
+    margin-left: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Adjust SVG colors for each theme */
+  [data-theme="dark"] .project-link svg path {
+    stroke: var(--button-text);
+  }
+  
+  .github-link {
+    background: none;
+    padding: 0;
+    padding: 10px;
+  }
+  
+  [data-theme="dark"] .github-link svg path {
+    fill: var(--text-color);
+  }
+  
+  .github-link:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+  
+  .project-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.5s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.03);
+  }
+  
+  /* Alternating Layout */
+  #project2 .project-card,
+  #project4 .project-card {
+    flex-direction: row-reverse;
+  }
+  
+@media (max-width: 768px) {
+  :root {
+    --cardHeight: auto;
+    --cardTopPadding: 1rem;
+  }
+
+  .work-section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  #projects {
+    display: grid;
+    grid-template-rows: repeat(var(--cards), auto);
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: calc(var(--cards) * 1rem);
+    margin-bottom: 2rem;
+  }
+  
+  .project-card-wrapper {
+    position: sticky; 
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .project-card {
+    height: auto;
+    min-height: 350px; 
+    flex-direction: column !important;
+    padding: 1.5rem;
+    background-color: #f8f8f8 !important;
+  }
+  
+  [data-theme="dark"] .project-card {
+    background-color: #1f1f2c !important;
+  }
+
+  .project-info {
+    padding: 0;
+    width: 100%;
+    order: 1;
+  }
+  
+  .project-year {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #888;
+  }
+  
+  .project-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  [data-theme="dark"] .project-description {
+    color: #b8b8d0;
+  }
+  
+  .project-image {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    height: auto;
+    order: 2;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .project-links {
+    margin-top: 15px;
+  }
+  
+  .project-link {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .github-link {
+    position: relative;
+    top: -155px;
+    right: 0px;
+    background: none;
+    padding: 0;
+    margin-left: auto;
+  }
+  
+  /* Adjust card backgrounds for different projects - maintain visual distinction */
+  #project1 .project-card { background-color: var(--card-bg-1) !important; }
+  #project2 .project-card { background-color: var(--card-bg-2) !important; }
+  #project3 .project-card { background-color: var(--card-bg-3) !important; }
+  #project4 .project-card { background-color: var(--card-bg-4) !important; }
+  #project5 .project-card { background-color: var(--card-bg-5) !important; }
+}
